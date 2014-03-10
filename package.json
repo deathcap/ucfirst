@@ -1,0 +1,23 @@
+{
+  "name": "ucfirst",
+  "description": "uppercase first character of a string",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deathcap/ucfirst.git"
+  },
+  "keywords": [
+    "ucfirst",
+    "uppercase",
+    "characters",
+    "text"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "~2.10.2"
+  }
+}
