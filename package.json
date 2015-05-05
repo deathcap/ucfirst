@@ -12,12 +12,11 @@
     "characters",
     "text"
   ],
-  "dependencies": {},
   "scripts": {
     "test": "node test.js"
   },
   "license": "MIT",
   "devDependencies": {
-    "tape": "~2.10.2"
+    "tape": "^4.0.0"
   }
 }
