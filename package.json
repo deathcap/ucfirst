@@ -12,6 +12,9 @@
     "characters",
     "text"
   ],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "node test.js"
   },
