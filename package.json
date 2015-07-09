@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git@github.com:deathcap/ucfirst.git"
   },
+  "main": "ucfirst.js",
   "keywords": [
     "ucfirst",
     "uppercase",
@@ -13,7 +14,7 @@
     "text"
   ],
   "files": [
-    "index.js"
+    "ucfirst.js"
   ],
   "scripts": {
     "test": "node test.js"
