@@ -17,6 +17,7 @@
     "ucfirst.js"
   ],
   "scripts": {
+    "bench": "node benchmark.js",
     "test": "node test.js"
   },
   "license": "MIT",
