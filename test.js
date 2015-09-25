@@ -1,9 +1,9 @@
 'use strict';
 
-var ucfirst = require('./');
-var test = require('tape');
+const ucfirst = require('.');
+const test = require('tape');
 
-test('ascii', function(t) {
+test('ascii', t => {
   t.equals(ucfirst('hello'), 'Hello');
   t.equals(ucfirst('abc'), 'Abc');
   t.equals(ucfirst('h'), 'H');
@@ -13,24 +13,24 @@ test('ascii', function(t) {
   t.end();
 });
 
-test('unicode', function(t) {
+test('unicode', t => {
   t.equals(ucfirst('éllo'), 'Éllo');
   t.equals(ucfirst('Éllo'), 'Éllo');
   t.end();
 });
 
-test('empty', function(t) {
+test('empty', t => {
   t.equals(ucfirst(''), '');
   t.end();
 });
 
-test('nonstring throws', function(t) {
-  t.throws(function() { ucfirst(undefined) });
-  t.throws(function() { ucfirst() });
-  t.throws(function() { ucfirst(null) });
-  t.throws(function() { ucfirst(false) });
-  t.throws(function() { ucfirst(true) });
-  t.throws(function() { ucfirst([]) });
-  t.throws(function() { ucfirst({}) });
+test('nonstring throws', t => {
+  t.throws(() => ucfirst(undefined));
+  t.throws(() => ucfirst());
+  t.throws(() => ucfirst(null));
+  t.throws(() => ucfirst(false));
+  t.throws(() => ucfirst(true));
+  t.throws(() => ucfirst([]));
+  t.throws(() => ucfirst({}));
   t.end();
 });
