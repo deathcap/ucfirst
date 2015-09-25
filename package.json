@@ -2,26 +2,33 @@
   "name": "ucfirst",
   "description": "uppercase first character of a string",
   "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:deathcap/ucfirst.git"
-  },
-  "main": "ucfirst.js",
-  "keywords": [
-    "ucfirst",
-    "uppercase",
-    "characters",
-    "text"
+  "repository": "deathcap/ucfirst",
+  "author": "deathcap",
+  "contributors": [
+    "Shinnosuke Watanabe <snnskwtnb@gmail.com> (github.com/shinnn)"
   ],
   "files": [
-    "ucfirst.js"
+    "index.js"
+  ],
+  "keywords": [
+    "ucfirst",
+    "case",
+    "uppercase",
+    "character",
+    "characters",
+    "str",
+    "string",
+    "text"
   ],
   "scripts": {
     "bench": "node benchmark.js",
+    "pretest": "eslint --config @shinnn/node index.js test.js",
     "test": "node test.js"
   },
   "license": "MIT",
   "devDependencies": {
+    "@shinnn/eslint-config-node": "^1.0.1",
+    "eslint": "^1.5.1",
     "tape": "^4.0.0"
   }
 }
