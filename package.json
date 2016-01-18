@@ -2,6 +2,7 @@
   "name": "ucfirst",
   "description": "uppercase first character of a string",
   "version": "1.0.0",
+  "main": "ucfirst.js",
   "repository": "deathcap/ucfirst",
   "author": "deathcap",
   "contributors": [
