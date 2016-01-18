@@ -2,4 +2,7 @@ sudo: false
 branches:
   except: /^v\d/
 language: node_js
-node_js: stable
+node_js:
+  - 4
+  - 5
+  - stable
